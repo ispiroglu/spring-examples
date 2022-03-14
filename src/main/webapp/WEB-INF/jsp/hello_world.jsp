@@ -12,6 +12,6 @@
     <title>Spring MVC Demo</title>
 </head>
 <body>
-<a href="hello/showForm">Hello world Form</a>
+<a href="student/showForm">Student Form</a>
 </body>
 </html>
