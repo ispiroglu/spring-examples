@@ -21,11 +21,16 @@
         <br><br>
 
         <form:select path="country">
-            <form:option value="Brazil" label="Brazil" />
-            <form:option value="Turkey" label="Turkey" />
-            <form:option value="Germany" label="Germany" />
-            <form:option value="Austria" label="Austria" />
+            <form:options items="${countryOptions}" />
         </form:select>
+        <br><br>
+        Fav Language
+        <form:radiobuttons path="favouriteLanguage"
+        items="${student.favouriteLanguageOptions}" />
+        <br><br>
+        Linux <form:checkbox path="operatingSystems" value="linux" />
+        MacOS <form:checkbox path="operatingSystems" value="MacOS" />
+        MS Windows <form:checkbox path="operatingSystems" value="Windwos" />
 
         <br><br>
         <input type="submit" value="Submit" />
